@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    color: #2b2f33;
+}
+body{
+    background: linear-gradient(to bottom, #a0c8f0, #e6f0ff);
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    text-align: center;
+    /* overflow: hidden; */
+    height: 100vh;
+}
+
+.search{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top:7%;
+}
+
+input{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.5); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blurring background for glassy effect */
+    text-align: center;
+    box-shadow: 0 1px 2px 0px #575f68;
+}
+
+button{
+    background-color: #e6f0ff;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    width: 50px;
+    margin-left: 10px;
+    box-shadow: 0 1px 2px 0px #575f68;
+    background: rgba(255, 255, 255, 0.5); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blurring background for glassy effect */
+}
+
+i{
+    font-size: 17px;
+    color: #575f68;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 1px 2px 0px #575f68;
+    backdrop-filter: blur(10px); /* Blurring background for glassy effect */
+}
+
+.circle{
+   position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: #e6f0ff;
+    /* background: rgba(255, 255, 255, 0.2); */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 13%; */
+}
+
+.sun{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: black;
+    background-color: yellow;
+    border-radius: 50%;
+    right: 90%;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+}
+
+.content{
+    text-align: center;
+    color: black;
+}
+
+.time{
+    color: #575f68;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 30px; 
+    font-size: 20px;
+    font-weight:lighter;
+}
+
+h2{
+    margin-bottom: 40px;
+}
+
+.weather{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.am{
+    color: #575f68;
+    position: absolute;
+    display: flex;
+    top:60%
+}
+
+.pm{
+       color: #575f68;
+        position: absolute;
+        display: flex;
+        left:57%;
+        top: 60%;
+}
