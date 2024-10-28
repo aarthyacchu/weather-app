@@ -22,11 +22,12 @@ body{
 }
 
 input{
-    width: 300px;
+    width: 350px;
     height: 50px;
     border-radius: 30px;
     outline: none;
     border: none;
+    margin-left: 20px;
     background: rgba(255, 255, 255, 0.5); /* Transparent white */
     backdrop-filter: blur(10px); /* Blurring background for glassy effect */
     text-align: center;
@@ -39,7 +40,7 @@ button{
     border: none;
     border-radius: 30px;
     width: 50px;
-    margin-left: 10px;
+    margin-left: 20px;
     box-shadow: 0 1px 2px 0px #575f68;
     background: rgba(255, 255, 255, 0.5); /* Transparent white */
     backdrop-filter: blur(10px); /* Blurring background for glassy effect */
@@ -65,7 +66,6 @@ button:active{
     height: 300px;
     width: 300px;
     background-color: #e6f0ff;
-    /* background: rgba(255, 255, 255, 0.2); */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: black;
     border-radius: 50%;
@@ -73,33 +73,92 @@ button:active{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 13%; */
 }
 
 .sun{
     position: absolute;
-    height: 50px;
-    width: 50px;
-    color: black;
-    background-color: yellow;
-    border-radius: 50%;
-    right: 90%;
-    box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+    height: 23vh;
+    width: 23vh;
+    right: 64%;
+    top: -6%;
+    display: none;
 }
 
+.partly-cloudy{
+    position: absolute;
+    height: 18vh;
+    width: 18vh;
+    right:70%;
+    top: -4%;
+    display: none;
+}
+
+.light-rain{
+    position: absolute;
+    height: 23vh;
+    width: 23vh;
+    right: 70%;
+    top: -6%;
+    display: none;
+}
+
+.rainy{
+    position: absolute;
+    height: 15vh;
+    width: 15vh;
+    right: 76%;
+    display: none;
+}
+
+.thunder{
+    position: absolute;
+    height: 15vh;
+    width: 15vh;
+    right: 76%;
+    display: none;
+}
+
+.heavy-rain{
+    position: absolute;
+    height: 23vh;
+    width: 23vh;
+    right: 66%;
+    top: -2%;
+    display: none;
+}
+
+.snow{
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    right: 69%;
+    top: 9%;
+    display: none;
+}
+
+.haze{
+    position: absolute;
+    height: 35vh;
+    width: 35vh;
+    right: 50%;
+    top: -9%;
+    display: none;
+}
 .content{
     text-align: center;
     color: black;
 }
 
-.time{
+#time{
     color: #575f68;
+    font-size: 15px;
 }
 
 p{
+    color: #383a3d;
     margin-top: 20px;
     margin-bottom: 30px; 
-    font-size: 20px;
+    font-size: 19px;
     font-weight:lighter;
 }
 
@@ -107,22 +166,39 @@ h2{
     margin-bottom: 40px;
 }
 
-.weather{
+#temperature{
     font-size: 40px;
     font-weight: bold;
 }
 
-.am{
+.humidity{
     color: #575f68;
     position: absolute;
     display: flex;
     top:60%
 }
 
-.pm{
+.wind-speed{
        color: #575f68;
         position: absolute;
         display: flex;
         left:57%;
         top: 60%;
+}
+
+.humidity p{
+    font-size: 12px;
+    position: absolute;
+    display: flex;
+}
+
+.wind-speed p{
+    font-size: 12px;
+    position: absolute;
+    display: flex;
+    text-align: left;
+}
+
+#weather-description{
+    color: #575f68;
 }

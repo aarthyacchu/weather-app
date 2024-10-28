@@ -11,20 +11,31 @@
 <body>
     <div class="search">
         <input type="text" placeholder="Enter the city name">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
     <div class="container">
        <div class="circle">
-        <div class="sun"></div>    
+        <div class="sun-block">
+            <img class="sun" src="/images/sun_icon.png">
+            <img class="partly-cloudy" src="/images/partly_cloudy.png">
+            <img class="light-rain" src="/images/light_rain.png">
+            <img class="rainy" src="/images/rainy.png">
+            <img class="thunder" src="/images/thunder.png">
+            <img class="heavy-rain" src="/images/heavy_rain.png">
+            <img class="snow" src="/images/snow.png">
+            <img class="haze" src="/images/haze.png">
+
+        </div>    
         <div class="content">
-            <p>Day</p>
-            <div class="time">00:00:00</div>
-            <h2>City Name</h2>
-            <div class="weather">20°c</div>
+            <p id="day">Day</p>
+            <div id="time">00:00:00</div>
+            <h2 id="city">City Name</h2>
+            <div id="temperature">0°c</div>
+            <div id="weather-description">Clear</div>
         </div>     
        </div>
-       <div class="show am">05:31</div>
-       <div class="show pm">21:24</div>
+       <div class="humidity">00:00 <br> <p>Humidity</p></div>
+       <div class="wind-speed">00:00 <br> <p>WindSpeed</p></div>
     </div>
 
     <script src="script.js"></script>
