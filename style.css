@@ -5,12 +5,12 @@
     color: #2b2f33;
 }
 body{
-    background: linear-gradient(to bottom, #a0c8f0, #e6f0ff);
+    background: linear-gradient(to bottom, #a0c8f0, #e6f0ff);    
     display: flex;
     justify-content:space-around;
     align-items:center;
     text-align: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 100vh;
 }
 
@@ -201,4 +201,9 @@ h2{
 
 #weather-description{
     color: #575f68;
+}
+
+input{
+    font-size: 17px;
+
 }

@@ -7,14 +7,14 @@ const weatherIcon = document.querySelector(".sun-block");
 async function weatherData(city) {
     const response = await fetch(apiURL + city + `&appid=${apiKey}`);
     if (!response.ok) {
-        alert("City not found. Please try again.");
+        // alert("City not found. Please try again.");
         return;
     }
     
     const data = await response.json();
     const description = data.weather[0].main;
 
-    console.log(data); // to display in console
+    // console.log(data); // to display in console
 
     document.getElementById('city').innerText = data.name;
     document.getElementById('temperature').innerText = Math.round(data.main.temp) + "°c";
@@ -54,19 +54,17 @@ async function weatherData(city) {
 
 function updateTime() {
     const now = new Date();
-    const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false});
+    const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false});
     const dayString = now.toLocaleDateString([], { weekday: 'long' });
 
     document.getElementById('time').innerText = timeString;
     document.getElementById('day').innerText = dayString;
-
 }
 
 searchbtn.addEventListener("click", ()=>{
     const city = searchbox.value.trim();
     document.getElementById('city').innerText = city; // Display city name immediately
-        weatherData(city); // Fetch weather data for the entered city
+    weatherData(city); // Fetch weather data for the entered city
 })
 
-weatherData(city);
 updateTime();
