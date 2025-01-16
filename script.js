@@ -7,7 +7,7 @@ const weatherIcon = document.querySelector(".sun-block");
 async function weatherData(city) {
     const response = await fetch(apiURL + city + `&appid=${apiKey}`);
     if (!response.ok) {
-        // alert("City not found. Please try again.");
+        alert("City not found. Please try again.");
         return;
     }
     
